@@ -7,17 +7,13 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./templates/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  // theme: {
-  //   extend: {
-  //     colors: {
-  //       background: "var(--background)",
-  //       foreground: "var(--foreground)",
-  //     },
-  //   },
-  // },
-  fontFamily: {
-    sans: ['Public Sans', 'sans-serif'],
-    serif: ['var(--font-dm-serif-text)', 'serif'],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Roboto', 'sans-serif'],
+        serif: ['var(--font-dm-serif-text)', 'serif'],
+      },
+    },
   },
   plugins: [],
 } satisfies Config;
