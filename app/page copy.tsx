@@ -87,7 +87,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen gap-16 w-screen font-[family-name:var(--font-geist-sans)]">
+    <div className="min-h-screen gap-16 w-screen font-(family-name:--font-geist-sans)">
       <main className="row-start-2 items-start sm:items-start h-full">
         <div className="flex">
           {/* Left content */}
@@ -97,7 +97,7 @@ export default function Home() {
                 <h2 className="text-6xl font-bold font-serif">Hi, I am<br/> Muhammad Amien</h2>
                 <p className="text-sm w-1/2">I am a passionate software engineer with a focus on developing innovative solutions and enhancing user experiences.</p>
                 <div className="flex gap-2">
-                  <a href="/contact" className="mt-4 inline-block py-2 bg-[#240541] text-white font-normal rounded-full shadow-md hover:bg-[#883BE9] focus:outline-none focus:ring-2 focus:ring-[#c399f7] focus:ring-opacity-50 ease-out duration-300">
+                  <a href="/contact" className="mt-4 inline-block py-2 bg-[#240541] text-white font-normal rounded-full shadow-md hover:bg-[#883BE9] focus:outline-hidden focus:ring-2 focus:ring-[#c399f7] focus:ring-opacity-50 ease-out duration-300">
                     <div className="flex items-center gap-1 px-6 justify-center">
                       Hire Me
                       <HiOutlinePaperAirplane className="rotate-45 pb-1 text-lg" />
@@ -133,7 +133,7 @@ export default function Home() {
                   <div className="flex flex-col">
                     <div className="text-white text-md font-bold">Projects Statistics <br/>in 2025</div>
                     <div className="">
-                      <a href="/learn-more" className="mt-4 inline-block py-2 px-4 bg-[#240541] text-white font-normal rounded-full shadow-md hover:bg-[#883BE9] focus:outline-none focus:ring-2 focus:ring-[#c399f7] focus:ring-opacity-50 ease-out duration-300">
+                      <a href="/learn-more" className="mt-4 inline-block py-2 px-4 bg-[#240541] text-white font-normal rounded-full shadow-md hover:bg-[#883BE9] focus:outline-hidden focus:ring-2 focus:ring-[#c399f7] focus:ring-opacity-50 ease-out duration-300">
                         <div className="flex items-center gap-1 justify-center">
                           Learn More
                           <FiArrowUpRight />
@@ -157,7 +157,7 @@ export default function Home() {
                     duration: 0.4,
                     scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
                   }}
-                  className="w-14 h-14 bg-[#fff] rounded-full flex justify-center items-center overflow-hidden"
+                  className="w-14 h-14 bg-white rounded-full flex justify-center items-center overflow-hidden"
                 >
                   <RandomProgrammingLogo />
                 </motion.div>
@@ -170,7 +170,7 @@ export default function Home() {
                     duration: 0.4,
                     scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
                   }}
-                  className="w-14 h-14 bg-[#fff] rounded-full flex justify-center items-center overflow-hidden"
+                  className="w-14 h-14 bg-white rounded-full flex justify-center items-center overflow-hidden"
                 >
                   <RandomProgrammingLogo />
                 </motion.div>
@@ -181,7 +181,7 @@ export default function Home() {
                     duration: 0.4,
                     scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
                   }}
-                  className="w-14 h-14 bg-[#fff] rounded-full flex justify-center items-center overflow-hidden"
+                  className="w-14 h-14 bg-white rounded-full flex justify-center items-center overflow-hidden"
                 >
                   <RandomProgrammingLogo />
                 </motion.div>
