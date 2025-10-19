@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
                 <div className='flex items-center gap-8'>
                     <ul className="flex space-x-4">
                         <li>
-                            <Link href="/" className="hover:underline backdrop-invert">
+                            <Link href="/" className="hover:underline">
                                 Home
                             </Link>
                         </li>
