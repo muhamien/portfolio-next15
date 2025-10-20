@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Public_Sans, DM_Serif_Text } from "next/font/google";
 import { Navbar } from "../templates/navbar";
+import Footer from "../components/Footer";
 import "./globals.css";
 
 const PublicSans = Public_Sans({
@@ -32,6 +33,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
