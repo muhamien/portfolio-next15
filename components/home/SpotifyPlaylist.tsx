@@ -47,7 +47,7 @@ export default function SpotifyPlaylist() {
         setError(null);
 
         // Menggunakan Spotify Web API untuk mendapatkan playlist user
-        const response = await fetch('/me/player/recently-played');
+        const response = await fetch('/api/spotify/playlists');
         
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -71,7 +71,7 @@ export default function SpotifyPlaylist() {
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="bg-gradient-to-br from-green-50 to-emerald-100 dark:from-gray-800 dark:to-gray-900 rounded-2xl p-8 shadow-lg"
+        className="font-sans bg-gradient-to-br from-green-50 to-emerald-100 dark:from-gray-800 dark:to-gray-900 p-8 shadow-lg"
       >
         <div className="flex items-center justify-center">
           <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-green-500"></div>
@@ -86,7 +86,7 @@ export default function SpotifyPlaylist() {
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="bg-gradient-to-br from-red-50 to-pink-100 dark:from-gray-800 dark:to-gray-900 rounded-2xl p-8 shadow-lg"
+        className="font-sans bg-gradient-to-br from-red-50 to-pink-100 dark:from-gray-800 dark:to-gray-900 p-8 shadow-lg"
       >
         <div className="text-center">
           <div className="text-red-500 text-4xl mb-4">🎵</div>
@@ -106,7 +106,7 @@ export default function SpotifyPlaylist() {
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 rounded-2xl p-8 shadow-lg"
+        className="font-sans bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 p-8 shadow-lg"
       >
         <div className="text-center">
           <div className="text-gray-400 text-4xl mb-4">🎵</div>
@@ -125,7 +125,7 @@ export default function SpotifyPlaylist() {
     <motion.div 
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="bg-gradient-to-br from-green-50 to-emerald-100 dark:from-gray-800 dark:to-gray-900 rounded-2xl p-8 shadow-lg"
+      className="font-sans bg-gradient-to-br from-green-50 to-emerald-100 dark:from-gray-800 dark:to-gray-900 p-8 shadow-lg"
     >
       <div className="flex items-center mb-6">
         <div className="bg-green-500 p-3 rounded-full mr-4">
@@ -155,7 +155,7 @@ export default function SpotifyPlaylist() {
             transition={{ delay: index * 0.1 }}
             whileHover={{ scale: 1.05, y: -5 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-white dark:bg-gray-700 rounded-xl p-4 shadow-md hover:shadow-lg transition-all duration-300 group"
+            className="font-sans bg-white dark:bg-gray-700 rounded-xl p-4 shadow-md hover:shadow-lg transition-all duration-300 group"
           >
             <div className="flex items-start space-x-3">
               <div className="flex-shrink-0">
@@ -177,10 +177,10 @@ export default function SpotifyPlaylist() {
               </div>
               
               <div className="flex-1 min-w-0">
-                <h3 className="text-sm font-semibold text-gray-800 dark:text-white group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors truncate">
+                <h3 className="font-sans text-sm font-semibold text-gray-800 dark:text-white group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors truncate">
                   {playlist.name}
                 </h3>
-                <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 line-clamp-2">
+                <p className="font-sans text-xs text-gray-500 dark:text-gray-400 mt-1 line-clamp-2">
                   {playlist.description || `By ${playlist.owner.display_name}`}
                 </p>
                 <div className="flex items-center mt-2 text-xs text-gray-500 dark:text-gray-400">
@@ -213,7 +213,7 @@ export default function SpotifyPlaylist() {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors duration-300"
+            className="font-sans inline-flex items-center px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors duration-300"
           >
             <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.42 1.56-.299.421-1.02.599-1.559.3z"/>

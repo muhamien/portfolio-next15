@@ -83,7 +83,7 @@ export default function RecentlyPlayed() {
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="bg-gradient-to-br from-purple-50 to-pink-100 dark:from-gray-800 dark:to-gray-900 rounded-2xl p-8 shadow-lg"
+        className="bg-gradient-to-br from-purple-50 to-pink-100 dark:from-gray-800 dark:to-gray-900 p-8 shadow-lg font-sans"
       >
         <div className="flex items-center justify-center">
           <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-purple-500"></div>
@@ -98,7 +98,7 @@ export default function RecentlyPlayed() {
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="bg-gradient-to-br from-red-50 to-pink-100 dark:from-gray-800 dark:to-gray-900 rounded-2xl p-8 shadow-lg"
+        className="bg-gradient-to-br from-red-50 to-pink-100 dark:from-gray-800 dark:to-gray-900 p-8 shadow-lg font-sans"
       >
         <div className="text-center">
           <div className="text-red-500 text-4xl mb-4">🎵</div>
@@ -116,7 +116,7 @@ export default function RecentlyPlayed() {
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 rounded-2xl p-8 shadow-lg"
+        className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 p-8 shadow-lg font-sans"
       >
         <div className="text-center">
           <div className="text-gray-400 text-4xl mb-4">🎵</div>
@@ -135,7 +135,7 @@ export default function RecentlyPlayed() {
     <motion.div 
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="bg-gradient-to-br from-purple-50 to-pink-100 dark:from-gray-800 dark:to-gray-900 rounded-2xl p-8 shadow-lg"
+      className="bg-gradient-to-br from-purple-50 to-pink-100 dark:from-gray-800 dark:to-gray-900 p-8 shadow-lg font-sans"
     >
       <div className="flex items-center mb-6">
         <div className="bg-purple-500 p-3 rounded-full mr-4">
@@ -164,7 +164,7 @@ export default function RecentlyPlayed() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: index * 0.1 }}
             whileHover={{ scale: 1.02, x: 5 }}
-            className="flex items-center space-x-4 bg-white dark:bg-gray-700 rounded-xl p-4 shadow-md hover:shadow-lg transition-all duration-300 group"
+            className="flex items-center space-x-4 bg-white dark:bg-gray-700 rounded-xl p-4 shadow-md hover:shadow-lg transition-all duration-300 group font-sans"
           >
             <div className="flex-shrink-0">
               {item.track.album.images.length > 0 ? (
